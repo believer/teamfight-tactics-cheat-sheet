@@ -3,10 +3,8 @@
   "alias": ["tft.willcodefor.beer"],
   "builds": [{ "src": "package.json", "use": "@now/static-build" }],
   "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/"
-    }
+    {"src": "*.js", "headers": {"cache-control": "max-age=31536000,immutable"}, "dest": "$1"},
+    {"src": "/(.*)", "headers": {"cache-control": "max-age=0,must-revalidate"}, "dest": "/index.html"}
   ],
   "regions": ["arn"]
 }
