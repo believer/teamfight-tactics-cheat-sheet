@@ -30,8 +30,6 @@ module NavLink = {
     let className =
       Cn.make([className, activeClassName->Cn.ifTrue(isActive)]);
 
-    <a ariaSelected=isActive className href onClick=handleLinkClick>
-      children
-    </a>;
+    <a className href onClick=handleLinkClick> children </a>;
   };
 };

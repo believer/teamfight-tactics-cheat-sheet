@@ -22,13 +22,13 @@ let make = () => {
        ->Belt.List.map(({name, item, description}) =>
            <button
              className={Cn.make([
-               "block font-semibold text-gray-800 text-left mb-2",
+               "block font-semibold text-left mb-2",
                "text-pink-500"->Cn.ifTrue(item === state),
              ])}
              key=name
              onClick={_ => dispatch(UpdateItem(item))}>
              name->React.string
-             <span className="block text-xs font-normal text-gray-600">
+             <span className="block text-xs font-normal text-gray-700">
                description->React.string
              </span>
            </button>

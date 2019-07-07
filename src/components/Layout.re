@@ -16,6 +16,7 @@ module Header = {
             "Champions"->React.string
           </Router.NavLink>
           <a
+            ariaLabel="Go to GitHub project"
             className="ml-6"
             href="https://github.com/believer/teamfight-tactics-cheat-sheet">
             <Icons.GitHub />
