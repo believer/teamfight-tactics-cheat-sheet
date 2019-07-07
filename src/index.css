@@ -4,5 +4,9 @@
 
 html,
 body {
-  @apply font-normal m-0 p-0;
+  @apply font-sans font-normal m-0 p-0 text-gray-900 min-h-screen;
+}
+
+body {
+  @apply border-l-8 border-pink-500;
 }
