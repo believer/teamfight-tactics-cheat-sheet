@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "alias": ["tft.willcodefor.beer"],
+  "builds": [{ "src": "package.json", "use": "@now/static-build" }],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "$1"
+    }
+  ],
+  "regions": ["arn"]
+}
