@@ -10,3 +10,13 @@ body {
 body {
   @apply border-l-8 border-pink-500;
 }
+
+.link {
+  box-shadow: 0 0 0 0 theme("colors.transparent");
+  transition-property: color, box-shadow;
+  transition: 200ms ease-in-out;
+}
+
+.link-active {
+  box-shadow: -4px 0 0 0 theme("colors.pink.500");
+}

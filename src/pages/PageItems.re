@@ -22,8 +22,8 @@ let make = () => {
        ->Belt.List.map(({name, item, description}) =>
            <button
              className={Cn.make([
-               "block font-semibold text-left mb-2",
-               "text-pink-500"->Cn.ifTrue(item === state),
+               "block font-semibold link text-left mb-2 px-4 -ml-4",
+               "text-pink-500 link-active"->Cn.ifTrue(item === state),
              ])}
              key=name
              onClick={_ => dispatch(UpdateItem(item))}>
